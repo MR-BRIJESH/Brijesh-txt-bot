@@ -1,4 +1,4 @@
-#🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌
+#𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇
 # Add your details here and then deploy by clicking on HEROKU Deploy button
 import os
 
