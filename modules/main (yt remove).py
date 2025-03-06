@@ -27,13 +27,13 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Download the photo
-photo = 'https://tinypic.host/images/2025/02/04/IMG_20250204_194908.jpg'
+photo = 'https://i.ibb.co/LtqjVy7/file-3958.jpg'
 
-credit ="𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎" 
-OWNER = int(os.environ.get("OWNER", 5680454765))
+credit ="𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇" 
+OWNER = int(os.environ.get("OWNER", 6344648593))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "5680454765").split()):  
+    for x in (os.environ.get("ADMINS", "6344648593").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
@@ -47,7 +47,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-OWNER = int(os.environ.get("OWNER", 5680454765))
+OWNER = int(os.environ.get("OWNER", 6344648593))
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -161,13 +161,13 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Ok... \nFor command **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/+taZCy5OkoMUwNzI9'>ᴛᴇʟᴇɢʀᴀᴍ Group</a>**\n\n**Bot Made BY 🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌**🔍\n\n"
+        "Checking status Ok... \nFor command **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/+qutXY5xbN0I4OWY1'>ᴛᴇʟᴇɢʀᴀᴍ Group</a>**\n\n**Bot Made BY 𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇**🔍\n\n"
         "Progress:🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%\n\n"
     )
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("🦅ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ💞", True)
+    await m.reply_text("🦅 STOP💞", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -179,7 +179,7 @@ async def txt_handler(bot: Client, m: Message):
     await bot.send_document(OWNER, x)
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -202,7 +202,7 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your Batch Name or send 1 for grabing from text filename.**")
+    await editable.edit("**Enter Your Batch Name or send b for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -211,7 +211,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣⪼ 144   for 144p\n┣⪼ 240   for 240p\n┣⪼ 360   for 360p\n┣⪼ 480   for 480p\n┣⪼ 720   for 720p\n┣⪼ 1080  for 1080p\n╰━━⌈⚡[🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋]⚡⌋━━➣ **")
+    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣⪼ 144   for 144p\n┣⪼ 240   for 240p\n┣⪼ 360   for 360p\n┣⪼ 480   for 480p\n┣⪼ 720   for 720p\n┣⪼ 1080  for 1080p\n╰━━⌈⚡[🦋𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇🦋]⚡⌋━━➣ **")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -238,15 +238,15 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇 🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = '𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
         CR = credit
         
-    await editable.edit("**Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '0' for use default**")
+    await editable.edit("**Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send 'no' for use default**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
@@ -404,7 +404,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n**📚𝐓𝐢𝐭𝐥𝐞** » `{name}\n\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n🔗𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐥𝐢𝐧𝐤 » {count}\n\n🖇️𝐓𝐨𝐭𝐚𝐥 𝐥𝐢𝐧𝐤𝐬 » {len(links)}\n\n🌿**𝐔𝐑𝐋** -  `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦"
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n**📚𝐓𝐢𝐭𝐥𝐞** » `{name}\n\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n🔗𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐥𝐢𝐧𝐤 » {count}\n\n🖇️𝐓𝐨𝐭𝐚𝐥 𝐥𝐢𝐧𝐤𝐬 » {len(links)}\n\n🌿**𝐔𝐑𝐋** - url kya karega😂😂`{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇🐦"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -422,7 +422,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🕊️Done Baby💞")
+    await m.reply_text("🕊️DONE ✅ 💞")
 
 
 
