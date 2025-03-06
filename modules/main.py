@@ -26,7 +26,7 @@ from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-credit ="𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎" 
+credit ="𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇" 
 # Initialize the bot
 bot = Client(
     "bot",
@@ -108,8 +108,8 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Nikhil_saini_khe"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Oye_brijesh"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Oye_brijesh"),
         ],
     ]
 )
@@ -118,8 +118,8 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Nikhil_saini_khe"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Oye_brijesh"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Oye_brijesh"),
         ],
     ]
 )
@@ -149,7 +149,7 @@ async def start_command(bot: Client, message: Message):
     # Caption for the image
     caption = (
         "🌟 Welcome Boss😸! 🌟\n\n"
-        "➽ I am powerful uploader bot 📥\n\n➽ I Can Extract Videos & Pdf From Your Text File and Upload to Telegram\n\n➽ 𝐔𝐬𝐞 /Stop for **Stop** ⛔ working process \n\n➽ 𝐔𝐬𝐞 /saini Command To Download  Data From TXT File 🗃️ \n\n➽ 𝐌𝐚𝐝𝐞 𝐁𝐲: 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        "➽ I am powerful uploader bot 📥\n\n➽ I Can Extract Videos & Pdf From Your Text File and Upload to Telegram\n\n➽ 𝐔𝐬𝐞 /Stop for **Stop** ⛔ working process \n\n➽ 𝐔𝐬𝐞 /brijesh Command To Download  Data From TXT File 🗃️ \n\n➽ 𝐌𝐚𝐝𝐞 𝐁𝐲: 𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇 🦁"
     )
 
     await asyncio.sleep(1)
@@ -196,18 +196,18 @@ async def start_command(bot: Client, message: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("🦅ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ💞", True)
+    await m.reply_text("🦅 STOPPED ", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["saini"]) )
+@bot.on_message(filters.command(["brijesh"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇"
     token = f"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDEyNjcwMDYuMTgzLCJkYXRhIjp7Il9pZCI6IjY1YzFlZTE1ODZmMTQ4MDAxMjdkOWIxOSIsInVzZXJuYW1lIjoiNjM5NDM4MzAzMCIsImZpcnN0TmFtZSI6IkRlZXBhbnNoIiwibGFzdE5hbWUiOiJNaXNocmEiLCJvcmdhbml6YXRpb24iOnsiX2lkIjoiNWViMzkzZWU5NWZhYjc0NjhhNzlkMTg5Iiwid2Vic2l0ZSI6InBoeXNpY3N3YWxsYWguY29tIiwibmFtZSI6IlBoeXNpY3N3YWxsYWgifSwiZW1haWwiOiJyYWplc2htaXNocmExOTc5MEBnbWFpbC5jb20iLCJyb2xlcyI6WyI1YjI3YmQ5NjU4NDJmOTUwYTc3OGM2ZWYiLCI1Y2M5NWEyZThiZGU0ZDY2ZGU0MDBiMzciXSwiY291bnRyeUdyb3VwIjoiSU4iLCJ0eXBlIjoiVVNFUiJ9LCJpYXQiOjE3NDA2NjIyMDZ9.hDoYcFo9uxxhajHudIZtqgtqd3G8QdNxQSS9qkdjNJg"
     try:    
         with open(x, "r") as f:
@@ -230,7 +230,7 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your Batch Name**\n\n**Send __1__ for use default.**")
+    await editable.edit("**Enter Your Batch Name**\n\n**Send __b__ for use default.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -239,7 +239,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣━━⪼ send 144  for 144p\n┣━━⪼ send 240  for 240p\n┣━━⪼ send 360  for 360p\n┣━━⪼ send 480  for 480p\n┣━━⪼ send 720  for 720p\n┣━━⪼ send 1080 for 1080p\n╰━━⌈⚡[🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋]⚡⌋━━➣ **")
+    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣━━⪼ send 144  for 144p\n┣━━⪼ send 240  for 240p\n┣━━⪼ send 360  for 360p\n┣━━⪼ send 480  for 480p\n┣━━⪼ send 720  for 720p\n┣━━⪼ send 1080 for 1080p\n╰━━⌈⚡[🦋𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇🦋]⚡⌋━━➣ **")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -261,14 +261,14 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
 
-    await editable.edit("**Enter Your Name**\n\n**Send __1__ for use default**")
+    await editable.edit("**Enter Your Name**\n\n**Send __b__ for use default**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇 🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = '𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -473,7 +473,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🕊️Done Baby💞")
+    await m.reply_text("🕊️DONE ✅ 💞")
 
 
 
