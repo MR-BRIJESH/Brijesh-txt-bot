@@ -1,5 +1,5 @@
 {
-    "name": "NIKHIL",
+    "name": "𝐌𝐑 𝐁𝐑𝐈𝐉𝐄𝐒𝐇 😇",
     "description": "Bot For Telegram",
     "logo": "https://tinypic.host/images/2025/01/10/Purvi-Cid.th.jpeg",
     "keywords": [
@@ -8,17 +8,17 @@
         "pyrogram"
     ],
     "repository": "",
-    "success_url": "https://t.me/+taZCy5OkoMUwNzI9",
+    "success_url": "https://t.me/+qutXY5xbN0I4OWY1",
     "stack": "container",
     "env": {
         "API_ID": {
             "description": "Enter Your Api Id",
-            "value": "28094744",
+            "value": "26421834",
             "required": true
         },
         "API_HASH": {
             "description": "Enter Your Api Hash",
-            "value": "a75af4285edc7747c57bb19147ca0b9b",
+            "value": "fe21db9f61ff01300fc1fa3673617983",
             "required": true
         },
         "BOT_TOKEN": {
@@ -28,7 +28,7 @@
         },
         "BOT_NAME": {
             "description": "Enter Your Telegram Bot Name",
-            "value": "@Nklurluploader_bot",
+            "value": "@Abtxtbot",
             "required": true
         },
         "MONGO_URI": {
